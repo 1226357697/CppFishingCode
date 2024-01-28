@@ -14,10 +14,10 @@ public:
 	void moveForword();//向前移动
 	int frameFun(vector<fish *>*fishArr);//每一帧调用
 	void isTest(vector<fish *>*fishArr);
-	void bullet::createGold(fish * fs);
-	void bullet::setX(float x);
-	void bullet::setY(float y);
-	bool bullet::inScreen();
+	void createGold(fish * fs);
+	void setX(float x);
+	void setY(float y);
+	bool inScreen();
 	utils::useSpSt st1;//子弹结构一
 	utils::useSpSt st2;//鱼结构二
 public:

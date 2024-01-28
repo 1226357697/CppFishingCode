@@ -4,12 +4,12 @@ class files
 public:
 	files();
 	~files();
-	void getFile(LPWSTR url);
-	void files::close();
-	void files::readFile();
-	void files::size();
-	void files::writeFile();
-	void files::empty();
+	void getFile(LPCWSTR url);
+	void close();
+	void readFile();
+	void size();
+	void writeFile();
+	void empty();
 public:
 	HANDLE hFile;
 	DWORD  len;

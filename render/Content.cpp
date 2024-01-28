@@ -266,7 +266,7 @@ void Content::getTextInfo(string  txt, D2D1_SIZE_F& size) {
 	LPWSTR a = g_chartowchar2(txt.c_str());
 	this->getTextInfo(txt, size);
 };
-ID2D1Bitmap * Content::getSoucre(WCHAR * url) {
+ID2D1Bitmap * Content::getSoucre(const WCHAR * url) {
 	int index = -1;
 	wstring ws1 = url;
 	for (int i = 0; i < this->imgName.size(); i++) {

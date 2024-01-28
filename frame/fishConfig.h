@@ -9,7 +9,7 @@ public:
 	void setFishFrame(fish * fs, int startY, int w, int h, int num, int type, float zoom = 1);//设置鱼的帧信息
 	void createFish(vector<fish *> * fishArr, DisplayObject *ds);//创建鱼
 	void frameFun(vector<fish *> * fishArr, DisplayObject *ds);//每一帧fishConfig应该做的操作
-	void fishConfig::setType(fish* l_fs, int type,int setType);//随机获取一种鱼出现的类型并进行相关解释
+	void setType(fish* l_fs, int type,int setType);//随机获取一种鱼出现的类型并进行相关解释
 	void(*removeScene)(fish * b);//移出创建鱼进行的操作
 public:
 	int createNum = 4;//一次创建创建的鱼的数量

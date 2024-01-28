@@ -18,8 +18,8 @@ public:
 	virtual float getWidth();
 	virtual float getHeight();
 	DisplayObject(float x, float y);
-	virtual sprite *  DisplayObject::getChildById(string id);
-	virtual bool DisplayObject::inRect(POINT * pt);
+	virtual sprite *  getChildById(string id);
+	virtual bool inRect(POINT * pt);
 	virtual void initG_x();
 	virtual void initG_y();
 

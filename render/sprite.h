@@ -5,7 +5,7 @@ class sprite :public DisplayObject
 {
 public:
 	sprite(int x,int y);
-	sprite(DemoApp * app, WCHAR * url, string spriteType="default",int width=-1,int height = -1);
+	sprite(DemoApp * app, const WCHAR * url, string spriteType="default",int width=-1,int height = -1);
 	sprite(DemoApp * app, ID2D1Bitmap * url, string spriteType = "default", int width = -1, int height = -1);
 	~sprite();
 	virtual void render(DemoApp*);

@@ -47,7 +47,7 @@ namespace frame1 {
 	extern void onKeyUp(int x);//场景点击事件
 	extern void initPt();//初始炮台
 	extern void initPt2();//初始化炮台位置
-	extern sprite* initAmt1(LPWSTR url,int w,int h,int frame,float zoom=1);//初始化单帧动画
+	extern sprite* initAmt1(LPCWSTR url,int w,int h,int frame,float zoom=1);//初始化单帧动画
 	extern void initAmt2(sprite * v,int startY, int w, int h, int frame, float zoom);
 	extern DWORD WINAPI tk1Fun();//计时器每一帧调用函数
 	extern void tk1FunC(DemoApp ** app, ticker *tk);
@@ -59,5 +59,5 @@ namespace frame1 {
 	extern float allPower;
 	extern float nowPower;
 	extern HANDLE  hThred;
-	extern 	fishConfig *  initFishConfig(LPWSTR url,int swimY,int w,int h ,int swimNum,int deathY,int deathNum,int getGold,int maxFish = 30,int deathInt=10);//初始化创建鱼对象
+	extern 	fishConfig *  initFishConfig(LPCWSTR url,int swimY,int w,int h ,int swimNum,int deathY,int deathNum,int getGold,int maxFish = 30,int deathInt=10);//初始化创建鱼对象
 }

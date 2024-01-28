@@ -11,7 +11,7 @@ files::~files()
 {
 	
 }
-void files::getFile(LPWSTR url) {
+void files::getFile(LPCWSTR url) {
 	this->hFile = CreateFile(url, GENERIC_READ| GENERIC_WRITE, 0, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, 0);
 	if (hFile == INVALID_HANDLE_VALUE) {
 		MessageBox(NULL, L"´íÎó", L"txt", MB_OK);

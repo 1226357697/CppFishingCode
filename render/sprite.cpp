@@ -6,7 +6,7 @@ sprite::sprite(int x, int y) {
 	this->initG_x();
 	this->initG_y();
 }
-sprite::sprite(DemoApp * app, WCHAR * url, string spriteType, int w2, int h2)
+sprite::sprite(DemoApp * app, const WCHAR * url, string spriteType, int w2, int h2)
 {
 	this->img = app->content->getSoucre(url);
 	if (w2 == -1) {

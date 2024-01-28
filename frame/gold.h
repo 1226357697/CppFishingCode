@@ -7,8 +7,8 @@ public:
 	gold(sprite * view);
 	void frameFun();
 	void getCenterPoint();
-	void gold::setX(float x);
-	void gold::setY(float y);
+	void setX(float x);
+	void setY(float y);
 	float t;
 //	void setFrameArr(vector<u_rect>  * arr);
 public:

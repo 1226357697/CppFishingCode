@@ -7,7 +7,8 @@ namespace utils {
 	};
 	template<class T>
 	bool vecRemove(vector<T *> & vc, T * sp) {
-		vector<T *>::iterator s = find(vc.begin(),vc.end(),sp);
+		auto s = std::find(vc.begin(), vc.end(), sp);
+		//vector<T *>::iterator s = std::find(vc.begin(),vc.end(),sp);
 
 		vc.erase(s);
 		return true;

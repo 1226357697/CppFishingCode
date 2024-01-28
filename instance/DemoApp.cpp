@@ -163,7 +163,7 @@ LRESULT CALLBACK DemoApp::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM
 		::SetWindowLongPtrW(
 			hwnd,
 			GWLP_USERDATA,
-			PtrToUlong(pDemoApp)
+			(LONG_PTR)pDemoApp
 		);
 		
 		result = 1;

@@ -127,7 +127,7 @@ void frame1::init(DemoApp ** app, colVec ** colObj) {
 	frame1::initFishConfig(L"img/fish/fish11.png", 0, 274,100, 32, 32 * 100, 1, 120, 1, 98);
 }
 //地址 游泳开始帧的y 宽度 高度 游泳帧数量 死亡开始帧Y 死亡帧的数量 获得的金币
-fishConfig *  frame1::initFishConfig(LPWSTR url, int swimY, int w, int h, int swimNum, int deathY, int deathNum,int getGold, int maxFish, int deathInt) {
+fishConfig *  frame1::initFishConfig(LPCWSTR url, int swimY, int w, int h, int swimNum, int deathY, int deathNum,int getGold, int maxFish, int deathInt) {
 	fishConfig * fc1 = new fishConfig(
 		frame1::app, frame1::scene, frame1::colObj,
 		new sprite(frame1::app, url),
@@ -216,7 +216,7 @@ void frame1::initPt2() {
 	frame1::subtractBtn->setY(frame1::bottomBox->getChildById("ptBg")->getHeight()/3+10);
 
 }
-sprite *  frame1::initAmt1(LPWSTR url, int w, int h,int frame, float zoom) {
+sprite *  frame1::initAmt1(LPCWSTR url, int w, int h,int frame, float zoom) {
 		sprite * amtTest = new sprite(frame1::app, url);
 		amtTest->width = w;
 		amtTest->height = h;

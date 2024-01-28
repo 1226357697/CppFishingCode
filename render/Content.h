@@ -55,7 +55,7 @@ public:
 		void fillImage(WCHAR * url, int x, int y, int width, int height, int srcX = 0, int srcY = 0, float xZoom = 1, float yZoom = 1, int angle = 0);
 		void fillImage(ID2D1Bitmap * img, int x, int y, int width, int height, int srcX = 0, int srcY = 0, float xZoom = 1, float yZoom = 1, int angle = 0);
 		//获取资源
-		ID2D1Bitmap * Content::getSoucre(WCHAR * url);
+		ID2D1Bitmap * getSoucre(const WCHAR * url);
 		//变换
 		void rotate(int angle,int x =0,int y = 0);
 		void scale(int zoom, int x = 0, int y = 0);

@@ -51,7 +51,7 @@ val  oMap<key, val>::get(key k) {
 }
 template<class key, class val>
 int oMap<key, val>::find(key k) {
-	vector<key>::iterator s = std::find(this->_key.begin(), this->_key.end(), k);
+	auto s = std::find(this->_key.begin(), this->_key.end(), k);
 
 	if (s != this->_key.end()) {
 		return distance(this->_key.begin(), s);
@@ -59,6 +59,7 @@ int oMap<key, val>::find(key k) {
 	else {
 		return -1;
 	}
+	return -1;
 };
 template<class key, class val>
 val&  oMap<key, val>::operator [] (key k) {

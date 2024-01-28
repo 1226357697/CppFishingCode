@@ -24,7 +24,7 @@ public:
 	float getKeyMax(vector <utils::usePoint> arr,string key);
 	float getKeyMin(vector <utils::usePoint> arr, string key);
 	bool isXj(float a1, float a2, float b1, float b2);
-	void collision::getPoint1Arr(sprite **sp1, vector <utils::usePoint> &pointArr1);
+	void getPoint1Arr(sprite **sp1, vector <utils::usePoint> &pointArr1);
 	bool obbTest(sprite **sp1, sprite ** sp2);
 	bool obb(sprite **sp1, sprite ** sp2);
 	float pointAngleInfo(utils::usePoint point1, utils::usePoint point2);
